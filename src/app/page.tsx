@@ -20,12 +20,13 @@ export default function Home() {
       {/* Paragraph about education */}
       <Paragraph className="text-gray-500 max-w-xl mt-4">
         I&apos;m a student at{" "}
-        <Highlight className="text-purple-600">Williams College</Highlight> studying Computer Science and Mathematics.
+        <Highlight className="text-purple-800">Williams College</Highlight> studying Computer Science and Mathematics.
       </Paragraph>
 
       {/* Paragraph about career goals */}
       <Paragraph className="text-gray-500 max-w-xl mt-4">
-        I&apos;m also a <Highlight className="text-blue-600">fullstack software developer</Highlight> passionate about building scalable web apps and learning new technologies.
+        I&apos;m also a <Highlight className="text-blue-800 bg-blue-200 px-2 py-0.25 rounded-full">fullstack </Highlight>software developer
+ passionate about building scalable web apps and learning new technologies.
       </Paragraph>
 
       {/* Section header for projects */}
