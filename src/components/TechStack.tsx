@@ -7,7 +7,7 @@ export const TechStack = () => {
   const stack = [
     {
       title: "Python",
-      src: "/python.svg",
+      src: "/Python.svg",
 
       className: "h-10 w-14 filter brightness-125",
     },
