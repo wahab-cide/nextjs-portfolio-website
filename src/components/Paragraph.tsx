@@ -13,7 +13,7 @@ export const Paragraph = ({
   return (
     <p
       className={twMerge(
-        "text-xl lg:text-base font-normal text-secondary mt-4",
+        "text-xl lg:text-base md:text-sm font-normal text-secondary mt-4",
         className
       )}
     >

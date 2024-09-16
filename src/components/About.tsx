@@ -29,10 +29,5 @@ export default function About() {
       I read all kinds of stuff from fiction to autobiographies. My current favorite books 
       are Game of Thrones by George R.R. Martin and Moby Dick by Herman Melville.
     </Paragraph>
-    <Paragraph>
-      I also listen to a lot of podcasts and audiobooks. Whenever I can't make time to read a book, 
-      I will listen to the audiobook on Audible. My kind of podcasts to listen to are true crime, documentries, and comedy.
-      My current favorite podcast is The Trojan Horse Affair by Serial Productions and The New York Times.
-    </Paragraph>
   </>);
 }

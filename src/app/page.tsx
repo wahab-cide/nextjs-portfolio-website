@@ -24,7 +24,7 @@ export default function Home() {
             {/* Paragraph about education */}
             <Paragraph className=" max-w-xl mt-4 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-200">
               I&apos;m a student at{" "}
-              <Highlight className="text-purple-800">Williams College</Highlight> studying Computer Science and Mathematics.
+              <Highlight className="text-[#ab47bc] font-bold">Williams College</Highlight> studying Computer Science and Mathematics.
             </Paragraph>
 
             {/* Paragraph about career goals */}
@@ -36,9 +36,9 @@ export default function Home() {
             {/* Section header for projects */}
             <Heading
               as="h2"
-              className="font-black text-gray-500 text-lg md:text-xl lg:text-2xl mt-20 mb-4"
+              className="font-bold  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-200 text-lg md:text-xl lg:text-2xl mt-20 mb-4"
             >
-              What I&apos;ve been working on
+              My most <Highlight className="text-[#ab47bc]">recent projects</Highlight>
             </Heading>
             
             {/* Products and TechStack sections */}
@@ -51,3 +51,4 @@ export default function Home() {
         </div>  
   );
 }
+

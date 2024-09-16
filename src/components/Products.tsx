@@ -8,11 +8,12 @@ import Image from "next/image";
 import { Paragraph } from "./Paragraph";
 import { motion } from "framer-motion";
 import { PinContainer } from "./3d-pin";
+import { IconArrowRight, IconArrowRightToArc, IconArrowsDiagonal, IconCode } from "@tabler/icons-react";
 
 export const Products = () => {
   return (
-    <div>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+    
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 p-4 mt-10 justify-center items-center">
         {products.map((product: Product, idx: number) => (
           <motion.div
             key={product.href}
@@ -46,13 +47,22 @@ export const Products = () => {
                     {product.description}
                   </Paragraph>
                   <div className="flex items-center justify-between mt-7 mb-3">
-                    <div className="flex items-center">
-                      {iconList.map((icon) => (
-                        <div key={icon} className="border border-white/[0.2]">
-                          <img src={icon} alt={icon} className="p-2"/>
+                    <div className="flex items-center"> 
+                    {product.iconLists?.map((icon: string) => (
+                      <div key={icon} className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center">
+                        <img
+                          key={icon}
+                          src={icon}
+                          alt="icon"
+                          className="p-2"
+                          />
                         </div>
-                      ))}
-                    </div>
+                    ))}
+                      </div>
+                      <div className="flex justify-center items-center">
+                        <p className="flex justify-center md:text-xs text-sm text-[#ab47bc]">View Code</p>
+                        <IconCode size={20} color="#ab47bc" className="ms-3"/>
+                      </div>
                   </div>
               </PinContainer>
 
@@ -60,6 +70,6 @@ export const Products = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    
   );
 };
