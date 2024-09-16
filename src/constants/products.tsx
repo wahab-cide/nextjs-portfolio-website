@@ -15,7 +15,7 @@ export const products = [
       "A full stack finance web application for managing multiple bank accounts.",
     thumbnail: sidefolioAceternity,
     images: [sidefolioAceternity, sidefolioAceternity2],
-    stack: ["React NextJs", "Tailwindcss", "Appwrite", "Plaid API"],
+    iconList: ["/React.svg", "/Tailwindcss.svg", "/TypeScript.svg"],
     slug: "crude",
     content: (
       <div>
@@ -45,7 +45,7 @@ export const products = [
       "An immersive and Interactive language learning platform.",
     thumbnail: sidefolioAlgochurn,
     images: [sidefolioAlgochurn, sidefolioAlgochurn2],
-    stack: ["ExpressJs", "OpenAI API", "Javascript"],
+    iconLists: ["/JavaScript.svg", "/CSS3.svg", "/HTML5.svg"],
     slug: "algochurn",
     content: (
       <div>
@@ -75,7 +75,7 @@ export const products = [
       "A stroke prediction model that uses machine learning to predict the likelihood of a stroke.",
     thumbnail: sidefolioMoonbeam,
     images: [sidefolioMoonbeam, sidefolioMoonbeam2],
-    stack: ["Python", "Scikit-learn", "Heroku", "Flask"],
+    iconLists: ["/Python.svg", "/scikit-learn.svg", "/Heroku.svg", "/Flask.svg"],
     slug: "srokepredict",
     content: (
       <div>

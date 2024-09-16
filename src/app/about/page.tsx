@@ -8,6 +8,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import About from "@/components/About";
+import { BackgroundBeamsWithCollision } from "@/components/background-beams-with-collision";
 
 export const metadata: Metadata = {
   title: "About | Abdul Wahab",
@@ -19,9 +20,11 @@ export default function AboutPage() {
   const images = [
   ];
   return (
-    <Container>
-      <Heading className="font-black">About Me</Heading>
-      <About />
-    </Container>
+    <BackgroundBeamsWithCollision>
+      <Container>
+        <Heading className="font-black text-white">About Me</Heading>
+        <About />
+      </Container>
+    </BackgroundBeamsWithCollision>
   );
 }

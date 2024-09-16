@@ -13,7 +13,7 @@ export const TechStack = () => {
     },
     {
       title: "Next.js",
-      src: "/images/logos/next.png",
+      src: "/images/logos/vc code.png",
 
       className: "h-10 w-14",
     },

@@ -7,11 +7,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { Paragraph } from "./Paragraph";
 import { motion } from "framer-motion";
+import { PinContainer } from "./3d-pin";
 
 export const Products = () => {
   return (
     <div>
-      <div className="grid grid-cols-1  gap-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {products.map((product: Product, idx: number) => (
           <motion.div
             key={product.href}
@@ -25,42 +26,37 @@ export const Products = () => {
             }}
             transition={{ duration: 0.2, delay: idx * 0.1 }}
           >
-            <Link
-              href={'/'} // Change this to product.href. {product.slug ? `/projects/${product.slug}` : product.href}
-              key={product.href}
-              className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-white rounded-2xl transition duration-200 pt-4"
-            >
-              <Image
-                src={product.thumbnail}
-                alt="thumbnail"
-                height="200"
-                width="200"
-                className="rounded-md"
-              />
-              <div className="flex flex-col justify-between">
-                <div>
-                  <Heading
-                    as="h4"
-                    className="font-black text-lg md:text-lg lg:text-lg "
-                  >
+            <div key={product.href} className="lg:min-h[32.5rem h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">
+              <PinContainer title={product.title} href={product.href}>
+                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh]">
+                  
+                  <Image
+                    src={product.thumbnail}
+                    alt="thumbnail"
+                    height="200"
+                    width="200"
+                    className="rounded-md"
+                  />
+                
+                </div>
+                <Heading as="h4" className="font-bold text-gray-300 text-lg md:text-lg lg:text-lg">
                     {product.title}
                   </Heading>
-                  <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
+                <Paragraph className="text-sm text-white md:text-sm lg:text-sm mt-2 max-w-xl">
                     {product.description}
                   </Paragraph>
-                </div>
-                <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
-                  {product.stack?.map((stack: string) => (
-                    <span
-                      key={stack}
-                      className="text-xs  md:text-xs lg:text-xs bg-gray-300 px-3 py-1 rounded-full text-secondary text-black"
-                    >
-                      {stack}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </Link>
+                  <div className="flex items-center justify-between mt-7 mb-3">
+                    <div className="flex items-center">
+                      {iconList.map((icon) => (
+                        <div key={icon} className="border border-white/[0.2]">
+                          <img src={icon} alt={icon} className="p-2"/>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+              </PinContainer>
+
+            </div>
           </motion.div>
         ))}
       </div>

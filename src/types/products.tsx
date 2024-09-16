@@ -7,6 +7,6 @@ export type Product = {
   images: StaticImageData[] | string[];
   href: string;
   slug?: string;
-  stack?: string[];
+  iconLists?: string[];
   content?: React.ReactNode | string;
 };
