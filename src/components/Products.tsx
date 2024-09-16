@@ -50,7 +50,7 @@ export const Products = () => {
                     <div className="flex items-center"> 
                     {product.iconLists?.map((icon: string) => (
                       <div key={icon} className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center">
-                        <img
+                        <Image
                           key={icon}
                           src={icon}
                           alt="icon"
