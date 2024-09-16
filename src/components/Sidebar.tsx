@@ -91,7 +91,7 @@ export const Navigation = ({
         >
           <link.icon
             className={twMerge(
-              "relative z-50 flex items-center space-x-2",
+              "relative z-100 flex items-center space-x-2",
               "h-4 w-4 flex-shrink-0",
               isActive(link.href) && "text-white"
             )}
