@@ -24,11 +24,11 @@ export const WorkHistory = () => {
               className="text-lg md:text-lg lg:text-lg text-green-400"
             >
               {item.company}
-            </Heading>
-            <Paragraph className="text-base md:text-base lg:text-base font-semibold">
+            </Heading> 
+            <Paragraph className="text-white text-base md:text-base lg:text-base font-semibold">
               {item.title}
             </Paragraph>
-            <Paragraph className="text-sm md:text-sm lg:text-sm mb-4">
+            <Paragraph className="text-white text-sm md:text-sm lg:text-sm mb-4">
               {item.description}
             </Paragraph>
 
@@ -46,7 +46,7 @@ const Step = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex space-x-1 items-start my-2">
       <IconCircleCheckFilled className="h-3 w-4 mt-1 text-neutral-300" />
-      <Paragraph className="text-sm md:text-sm lg:text-sm">
+      <Paragraph className="text-sm md:text-sm lg:text-sm text-white">
         {children}
       </Paragraph>
     </div>

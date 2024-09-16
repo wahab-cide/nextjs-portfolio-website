@@ -20,12 +20,14 @@ export default function About() {
     </Paragraph>
     <Paragraph className=" mt-4">
       I&apos;m also a content creator and a podcast host. Each week I host a podcast 
-      episode with Students at my college to discuss career paths and college life.
+      episode with students at my college to discuss career paths and college life.
     </Paragraph>
     <Paragraph className=" mt-4">
       I also love writing and sharing my thoughts on various topics. I write about my 
       childhood experiences, background, and my journey as a developer and a content creator. 
       But I wont't be able to write if I didn't spend a lot of time reading.
+    </Paragraph>
+    <Paragraph className=" mt-4">
       I read all kinds of stuff from fiction to autobiographies. My current favorite books 
       are Game of Thrones by George R.R. Martin and Moby Dick by Herman Melville.
     </Paragraph>

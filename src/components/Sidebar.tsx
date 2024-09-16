@@ -64,21 +64,21 @@ export const Navigation = ({
           href={link.href}
           onClick={() => isMobile() && setOpen(false)}
           className={twMerge(
-            "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm",
-            isActive(link.href) && "bg-white shadow-lg text-primary"
+            "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm text-white",
+            isActive(link.href) && "bg-green-400 shadow-lg text-primary"
           )}
         >
           <link.icon
             className={twMerge(
               "h-4 w-4 flex-shrink-0",
-              isActive(link.href) && "text-sky-500"
+              isActive(link.href) && "text-white"
             )}
           />
           <span>{link.label}</span>
         </Link>
       ))}
 
-      <Heading as="p" className="text-sm md:text-sm lg:text-sm pt-10 px-2">
+      <Heading as="p" className="text-sm md:text-sm lg:text-sm pt-10 px-2 text-gray-100">
         Socials
       </Heading>
       {socials.map((link: Navlink) => (
@@ -86,13 +86,13 @@ export const Navigation = ({
           key={link.href}
           href={link.href}
           className={twMerge(
-            "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
+            "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm text-gray-100"
           )}
         >
           <link.icon
             className={twMerge(
               "h-4 w-4 flex-shrink-0",
-              isActive(link.href) && "text-sky-500"
+              isActive(link.href) && "text-white"
             )}
           />
           <span>{link.label}</span>
@@ -104,17 +104,19 @@ export const Navigation = ({
 
 const SidebarHeader = () => {
   return (
-    <div className="flex space-x-2">
-      <Image
-        src="/images/profile.jpg"
-        alt="Avatar"
-        height="40"
-        width="40"
-        className="object-cover object-top rounded-full flex-shrink-0"
-      />
-      <div className="flex text-sm flex-col">
-        <p className="font-bold text-primary">Abel Mesfin</p>
-        <p className="font-light text-secondary">Developer</p>
+    <div>
+      <div className="flex space-x-2">
+        <Image
+          src="/images/Profile-photo.jpg"
+          alt="Avatar"
+          height="40"
+          width="40"
+          className="object-cover object-top rounded-full flex-shrink-0"
+        />
+        <div className="flex text-sm flex-col">
+          <p className="font-bold text-primary text-white">Abdul Wahab</p>
+          <p className="font-light text-secondary text-gray-100">Developer</p>
+        </div>
       </div>
     </div>
   );

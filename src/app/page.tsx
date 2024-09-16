@@ -13,11 +13,12 @@ import { useEffect } from "react";
 
 export default function Home() {
   return (
-    <div className="h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    <div className="h-full w-full dark:bg-black dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <Container>
+            <SidebarHeader />
             {/* Heading for introduction */}
-            <Heading className="font-gray text-4xl lg:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+            <Heading className=" text-4xl lg:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
               Hi, I&apos;m <Highlight className="text-green-400">Wahab</Highlight>
             </Heading>
 
@@ -28,8 +29,8 @@ export default function Home() {
             </Paragraph>
 
             {/* Paragraph about career goals */}
-            <Paragraph className="text-white max-w-xl mt-4 ">
-              I&apos;m also a <Highlight className=" bg-blue-200 px-2 py-0.25 rounded-full font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-blue-950 to-blue-700">fullstack </Highlight>software developer
+            <Paragraph className="max-w-xl mt-4 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-200 ">
+              I&apos;m also a <Highlight className=" bg-blue-200 px-2 py-0.25 rounded-full font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-blue-950 to-blue-600 filter brightness-125">fullstack </Highlight>software developer
       passionate about building scalable web apps and learning new technologies.
             </Paragraph>
 
@@ -51,4 +52,20 @@ export default function Home() {
         </div>  
   );
 }
+
+
+const SidebarHeader = () => {
+  return (
+    <div className=" ">
+      <Image
+        src="/images/Profile-photo.jpg"
+        alt="Avatar"
+        height="50"
+        width="50"
+        className="object-cover object-top rounded-md flex-shrink-0 mb-2 filter brightness-125"
+      />
+    </div>
+  );
+};
+// Purpose: Main page of the app. Contains introduction, education, and projects sections.
 

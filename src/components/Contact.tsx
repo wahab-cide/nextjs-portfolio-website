@@ -59,7 +59,7 @@ export const Contact = () => {
       </div>
       <div>
         <textarea
-          placeholder="Your Message"
+          placeholder="Submit logic not implemented yet. Please reach out to me at ac44@williams.edu"
           rows={10}
           className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
           value={formData.message.value}

@@ -9,12 +9,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Container>
-      <Heading className="font-black">Work History</Heading>
-      <Paragraph className="max-w-xl mt-4">
+      <Heading className="font-bold text-white">Work History</Heading>
+      <Paragraph className="max-w-xl mt-4 text-gray-300">
       I&apos;m a <Highlight className="text-blue-600">fullstack software developer</Highlight> 
       passionate about building scalable web apps and learning new technologies.
       </Paragraph>
-      <Paragraph className="max-w-xl mt-4">
+      <Paragraph className="max-w-xl mt-4 text-gray-300">
       My past experineces have been outside of the tech industry, but I have always been interested in technology.
       </Paragraph>
       <WorkHistory />
