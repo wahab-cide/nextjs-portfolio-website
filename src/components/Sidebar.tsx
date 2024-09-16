@@ -38,7 +38,7 @@ export const Sidebar = () => {
         )}
       </AnimatePresence>
       <button
-        className="fixed lg:hidden bottom-4 right-4 h-8 w-8 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-50"
+        className="fixed lg:hidden bottom-4 right-4 h-8 w-8 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-100"
         onClick={() => setOpen(!open)}
       >
         <IconLayoutSidebarRightCollapse className="h-4 w-4 text-secondary" />
@@ -91,7 +91,7 @@ export const Navigation = ({
         >
           <link.icon
             className={twMerge(
-              "relative z-100 flex items-center space-x-2",
+              
               "h-4 w-4 flex-shrink-0",
               isActive(link.href) && "text-white"
             )}
