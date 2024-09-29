@@ -12,6 +12,18 @@ export const timeline = [
     ],
   },
   {
+    company: "Sinuosity AI",
+    title: "Software Engineering Intern - AI Application Development",
+    date: "Jan 2023 - March 2023",
+    description: "Improving an AI Application for predicting crop diseases",
+    responsibilities: [
+      "Contributed to the improvement of an award-winning AI application that helps farmers across Africa predict crop diseases (Winner of the Zayed Sustainability Prize).",
+      "Developed software modules for image data preprocessing using Python and OpenCV.",
+      "Implemented algorithms to automate data annotation and augmentation, improving processing efficiency by approximately 45% ",
+      "Utilized version control systems (Git) for code management and collaboration.",
+    ],
+  },
+  {
     company: "Okuafo Foundation",
     title: "Integrated Marketing Intern",
     date: "Sep 2022 - Dec 2022",
@@ -26,7 +38,7 @@ export const timeline = [
   {
     company: "YAF Ghana",
     title: "Scholar and Mentor",
-    date: "May 2022 - Aug 2023",
+    date: "May 2022 - Dec 2022",
     description: "Mentoring and supporting students in Ghana",
     responsibilities: [
       "Researched and compiled educational materials to support student learning",

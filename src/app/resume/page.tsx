@@ -15,7 +15,7 @@ export default function Home() {
       passionate about building scalable web apps and learning new technologies.
       </Paragraph>
       <Paragraph className="max-w-xl mt-4 text-gray-300">
-      My past experineces have been outside of the tech industry, but I have always been interested in technology.
+      My past experineces have been mostly outside of the tech industry, but I have always been interested in technology.
       </Paragraph>
       <WorkHistory />
     </Container>
