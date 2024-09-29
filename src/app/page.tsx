@@ -26,7 +26,6 @@ export default function Home() {
             <Paragraph className=" max-w-xl mt-4 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-200">
               I&apos;m a student at{" "}
               <Highlight className="text-[#ab47bc] font-bold">Williams College</Highlight> studying Computer Science and Mathematics with coursework in Arabic, writing for film and creative writing. 
-              Focus areas include algorithm design, analytical problem-solving, advanced mathematical theories, language proficiency, cross-cultural communication, and effective writing techniques..
             </Paragraph>
 
             {/* Section header for projects */}
