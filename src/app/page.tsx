@@ -25,13 +25,8 @@ export default function Home() {
             {/* Paragraph about education */}
             <Paragraph className=" max-w-xl mt-4 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-200">
               I&apos;m a student at{" "}
-              <Highlight className="text-[#ab47bc] font-bold">Williams College</Highlight> studying Computer Science and Mathematics.
-            </Paragraph>
-
-            {/* Paragraph about career goals */}
-            <Paragraph className="max-w-xl mt-4 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-200 ">
-              I&apos;m also a <Highlight className=" bg-blue-200 px-2 py-0.25 rounded-full font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-blue-950 to-blue-600 filter brightness-125">fullstack </Highlight>software developer
-      passionate about building scalable web apps and learning new technologies.
+              <Highlight className="text-[#ab47bc] font-bold">Williams College</Highlight> studying Computer Science and Mathematics with coursework in Arabic, writing for film and creative writing. 
+              Focus areas include algorithm design, analytical problem-solving, advanced mathematical theories, language proficiency, cross-cultural communication, and effective writing techniques..
             </Paragraph>
 
             {/* Section header for projects */}
@@ -62,7 +57,7 @@ const SidebarHeader = () => {
         alt="Avatar"
         height="50"
         width="50"
-        className="object-cover object-top rounded-md flex-shrink-0 mb-2 filter brightness-125"
+        className="object-cover object-top rounded-full flex-shrink-0 mb-2 filter brightness-125"
       />
     </div>
   );

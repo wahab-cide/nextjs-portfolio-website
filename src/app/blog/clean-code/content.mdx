@@ -3,101 +3,128 @@ import { BlogLayout } from "@/components/BlogLayout";
 import { CodeWindow } from "@/components/CodeWindow";
 
 export const meta = {
-  date: "2023-08-18",
-  title: "Writing Clean Code With React",
+  date: "2024-09-28",
+  title: "The Future of AI in Water Quality",
   description:
-    "Effective and efficient ways to write clean code with React while keeping in mind the performance and maintainability of the codebase.",
-  image:
-    "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  tags: ["Clean Code"],
+    "Why Simply Predicting Water Potability Is Not Enough: The Future of AI in Water Quality",
+  image: "/blog-images/Blog Aquion.webp",
+  tags: ["Water quality with AI"],
 };
 
 export default (props) => <BlogLayout meta={meta} {...props} />;
 
-Velit cillum fugiat proident pariatur anim proident laborum incididunt magna in labore adipisicing veniam quis. Ut et exercitation dolor in enim quis. Et est excepteur exercitation voluptate in qui duis nulla in anim ut commodo deserunt nisi. Dolor pariatur irure occaecat Lorem mollit veniam adipisicing.
+## Why Simply Predicting Water Potability Is Not Enough: The Future of AI in Water Quality
 
-Deserunt qui ea do et laborum ad id. Tempor laborum aute fugiat tempor eu. Amet sint sint proident pariatur eiusmod mollit excepteur excepteur. Dolore cillum nulla enim tempor ad.
+As access to clean water becomes increasingly scarce in many regions, predicting whether water is potable 
+or not has become a critical need. Advances in machine learning and AI have made it possible to assess water quality with remarkable accuracy. 
+However, as we scale these predictions to larger systems—cities, regions, and even entire countries—it becomes 
+clear that predicting potability alone is not enough. Water quality managers, policymakers, 
+and suppliers need to understand why the AI model makes a particular prediction, 
+especially in high-stakes situations where lives and ecosystems are affected.
 
-Laborum quis proident ut anim consectetur. Consequat fugiat eiusmod qui officia duis eu minim cillum do qui. Sunt sit veniam minim ad id sunt magna est enim.
 
-Consectetur est sunt minim culpa quis aute officia incididunt ea laboris nulla officia dolor. Cupidatat cupidatat esse veniam cillum labore ullamco aliqua ex. Cillum incididunt ipsum laborum dolor enim incididunt consectetur id consectetur magna. Consequat mollit non ea cupidatat exercitation. Consequat reprehenderit eiusmod nisi ea esse id ut est consequat eu aliqua do quis.
+Current AI models often act as "black boxes," offering highly accurate predictions 
+without revealing how those predictions are made. 
+But for water management to be truly effective, 
+we must transition to "white box" models—models that not only predict 
+but also provide explanations for those predictions.
 
-Occaecat commodo velit ea consectetur ut sit. Duis eiusmod ad tempor nisi magna dolore incididunt ea dolore. Commodo proident eiusmod consequat cupidatat consectetur adipisicing dolor commodo tempor labore non dolore Lorem consectetur.
 
-## Code Snippet
+## The Shortcomings of Black Box Models in Water Quality Prediction
+When it comes to machine learning models like Random Forest and other ensemble methods, 
+their complexity makes them highly accurate but difficult to interpret. 
+These models can predict with high precision whether water is potable (safe to drink) 
+or non-potable (unsafe), but they don’t give much insight into which factors—like pH, 
+dissolved oxygen (DO), or turbidity—are driving that decision. In water quality management, 
+this lack of transparency is a significant issue.
 
-<CodeWindow title="BoxesContainer.tsx">
 
-```TSX
-import React from "react";
-import { motion } from "framer-motion";
+Imagine a scenario where an AI model predicts that a water source is non-potable. 
+Without understanding why the model reached that conclusion, water quality managers 
+might miss crucial insights. Was the prediction driven by high turbidity? 
+Elevated nitrate levels? Or was it the presence of heavy metals? Without that context, 
+it’s difficult to know which corrective action to take. Do you need better filtration? 
+Should you address agricultural runoff? Or is industrial waste the culprit?
 
-export const BoxesContainer = () => {
-  const rows = new Array(150).fill(1);
-  const cols = new Array(100).fill(1);
-  let colors = [
-    "--sky-300",
-    "--pink-300",
-    "--green-300",
-    "--yellow-300",
-    "--red-300",
-    "--purple-300",
-    "--blue-300",
-    "--indigo-300",
-    "--violet-300",
-  ];
-  const getRandomColor = () => {
-    return colors[Math.floor(Math.random() * colors.length)];
-  };
 
-  return (
-    <div
-      style={{
-        transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
-      }}
-      className="absolute left-1/4 p-4 -top-1/4 flex  -translate-x-1/2 -translate-y-1/2 w-full h-full z-0 "
-    >
-      {rows.map((_, i) => (
-        <motion.div
-          key={`row` + i}
-          className="w-16 h-8  border-l  border-slate-700 relative"
-        >
-          {cols.map((_, j) => (
-            <motion.div
-              whileHover={{
-                backgroundColor: `var(${getRandomColor()})`,
-                transition: { duration: 0 },
-              }}
-              animate={{
-                transition: { duration: 2 },
-              }}
-              key={`col` + j}
-              className="w-16 h-8  border-r border-t border-slate-700 relative"
-            >
-              {j % 2 === 0 && i % 2 === 0 ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="absolute h-6 w-10 -top-[14px] -left-[22px] text-slate-700 stroke-[1px] pointer-events-none"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 6v12m6-6H6"
-                  />
-                </svg>
-              ) : null}
-            </motion.div>
-          ))}
-        </motion.div>
-      ))}
-    </div>
-  );
-};
+For policymakers, this black-box nature of AI creates additional risks. 
+Policies built around predictions without explanations may fail to address 
+root causes or may result in ineffective or costly interventions.
 
-```
 
-</CodeWindow>
+## Why Explainability Matters in Water Quality Prediction
+This is where Explainable AI (XAI) becomes critical. With explainable models, we not only know whether water is safe to drink but also understand why. This interpretability is crucial for:
+
+### 1. Policy Development: 
+Water policies must be informed by actionable insights. Explainability allows policymakers to make data-driven decisions that target the specific factors affecting water quality.
+### 2. Water Quality Management: 
+Knowing which factors are contributing most to unsafe water enables water quality managers to take targeted action. For example, if high turbidity is consistently flagged as the main issue, managers can focus on reducing sedimentation.
+### 3. Transparency for Stakeholders: 
+Water suppliers and communities need to trust the models being used. XAI fosters transparency, allowing everyone from suppliers to local communities to understand the decision-making process behind water safety assessments.
+### 4. Proactive Intervention: 
+By understanding what’s driving water quality predictions, water authorities can implement preventative measures rather than reactive ones, thereby improving water safety before a crisis occurs.
+
+
+## Introducing Aquion: Building a Transparent AI for Water Quality
+At Oasis Water, we are developing Aquion, an AI-driven platform that not only predicts water quality but also explains its predictions. 
+Aquion is built around Random Forest, a highly effective ensemble learning algorithm known for its ability to handle complex 
+datasets and deliver accurate predictions.
+
+While Random Forest excels at predicting whether water is potable or non-potable, 
+it is inherently a black box model. To turn it into a white box model, we integrate SHAP 
+(SHapley Additive exPlanations), a game-theory-based method for interpreting machine learning models. 
+SHAP explains the contribution of each feature (such as pH, dissolved oxygen, or turbidity) to the model’s prediction. 
+This provides both global and local interpretability:
+###Global Interpretability: 
+SHAP can explain the overall importance of each water parameter across the entire dataset. 
+For instance, SHAP may reveal that pH and conductivity are the two most critical factors in determining potability across multiple water sources.
+
+### Local Interpretability: 
+SHAP also provides explanations for individual predictions. 
+In a specific water sample, SHAP might show that high nitrate 
+levels were the key factor driving the model’s prediction of non-potability, 
+giving water quality managers clear insight into which issue to address.
+
+
+## How Aquion’s XAI Approach Benefits Stakeholders
+
+Aquion's use of XAI empowers key stakeholders in several ways:
+
+### For Water Quality Managers: 
+They can see exactly which parameters are contributing to unsafe water predictions, enabling them to take targeted, corrective action. This is especially important in regions where limited resources must be allocated efficiently.
+
+### For Policymakers: 
+Detailed insights into water quality drivers allow for more informed policymaking. Policies can be fine-tuned to address the specific environmental, industrial, or agricultural factors impacting water safety in each region.
+
+### For Water Suppliers: 
+Understanding the model’s reasoning helps water suppliers maintain transparency with consumers and regulatory bodies. If a supply is deemed unsafe, suppliers can communicate exactly why and what is being done to rectify the situation.
+
+### For Communities: 
+Transparency in water quality predictions builds trust between communities and water suppliers. Aquion’s XAI tools ensure that communities can be informed about the specific risks affecting their water sources, which in turn fosters greater engagement in water conservation and protection efforts.
+
+
+
+## How Aquion Works: A Closer Look
+### Data Collection: 
+Aquion collects data from various water sources, including rivers, lakes, reservoirs, and wells, measuring parameters such as pH, turbidity, dissolved oxygen (DO), nitrates, and heavy metals.
+### Prediction Using Random Forest: 
+The model then uses Random Forest to predict whether the water is potable or non-potable based on the input data.
+### Explainability via SHAP: 
+Once the model makes a prediction, SHAP generates explanations for that prediction. SHAP identifies which features (e.g., pH, DO, or turbidity) contributed most to the result and by how much.
+### Actionable Insights: 
+These SHAP explanations are then presented through an intuitive dashboard, where water quality managers and policymakers can explore both global trends and individual predictions.
+
+
+## Looking Ahead: The Future of Water Quality and AI
+Predictive models like Aquion are the future of water management, but explainability must be at the forefront of these advancements. 
+The power of AI lies not just in its ability to predict, but in its capacity to explain and guide action. 
+With Aquion, we’re building an AI-powered platform that transforms water quality management from a reactive process to a proactive one—ensuring that both water safety and resource management are handled with the utmost efficiency and transparency.
+As the world continues to face increasing water scarcity, Aquion’s combination of Random Forest for accurate prediction 
+and SHAP for explainability sets a new standard for how we assess, manage, and improve water quality for future generations.
+
+
+At Oasis Water, we believe that the future of water quality management isn’t just about knowing whether water is safe, 
+but also understanding why it is—or isn’t. Aquion’s XAI-powered water prediction platform ensures that policymakers, 
+water managers, and communities are equipped with both the predictions and the insights they need to make informed 
+decisions about water safety. By turning black-box models into transparent, actionable tools, 
+we’re shaping the future of water management for a safer, more sustainable world.

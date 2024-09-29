@@ -15,7 +15,7 @@ export const products = [
       "A full stack finance web application for managing multiple bank accounts.",
     thumbnail: sidefolioAceternity,
     images: [sidefolioAceternity, sidefolioAceternity2],
-    iconLists: ["/React.svg", "/Tailwind CSS.svg", "/TypeScript.svg", "Appwrite.svg"],
+    iconLists: [ "/Tailwind CSS.svg", "/TypeScript.svg", "Appwrite.svg"],
     slug: "crude",
     content: (
       <div>
@@ -75,7 +75,7 @@ export const products = [
       "My porfolio Website Built with Next.js and Tailwind CSS.",
     thumbnail: sidefolioAlgochurn,
     images: [sidefolioAlgochurn, sidefolioAlgochurn2],
-    iconLists: ["/React.svg", "/Tailwind CSS.svg", "/TypeScript.svg"],
+    iconLists: [ "/Tailwind CSS.svg", "/TypeScript.svg"],
     slug: "algochurn",
     content: (
       <div>
