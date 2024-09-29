@@ -15,7 +15,7 @@ export const timeline = [
     company: "Sinuosity AI",
     title: "Software Engineering Intern - AI Application Development",
     date: "Jan 2023 - March 2023",
-    description: "Improving an AI Application for predicting crop diseases",
+    description: "Improved an AI Application used by farmers in Africa to predict crop diseases",
     responsibilities: [
       "Contributed to the improvement of an award-winning AI application that helps farmers across Africa predict crop diseases (Winner of the Zayed Sustainability Prize).",
       "Developed software modules for image data preprocessing using Python and OpenCV.",

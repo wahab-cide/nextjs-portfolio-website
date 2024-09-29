@@ -22,7 +22,7 @@ export default async function Blog() {
      
       <Heading className="font-black text-white pb-4">My writings on technology</Heading>
       <Paragraph className="pb-10 text-white">
-        I spend a lot of time reading and writing about technology. In my spare time, I research on how AI can be used to to solve water quality problems, improve agriculture, and food production in the most deprived parts of the world.
+       In my spare time, I research on how AI can be used to to solve water quality problems, improve agriculture, and food production in the most deprived parts of the world.
       </Paragraph>
       <Blogs blogs={data} />
     </Container>
